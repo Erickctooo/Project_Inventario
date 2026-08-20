@@ -1,7 +1,8 @@
 package project.Inventario.Dtos;
 
 public record ResponseApi<T>(
-        String message,
+        int httpCode,
+        String httpmessage,
         T data
 ) {
 }
